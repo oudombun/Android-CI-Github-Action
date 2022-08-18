@@ -35,8 +35,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN_RELEASE }}
         with:
-          tag_name: Release v${{ env.RELEASE_VERSION }}
-          release_name: Automatic Release
+          tag_name: ${{ env.RELEASE_VERSION }}
+          release_name: Release v${{ env.RELEASE_VERSION }}
           draft: false
           prerelease: false
 
